@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warwick ABACUS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-color: #D7CAA9;
+            overflow-x: hidden;
+        }
+        .parallax-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 300%; 
+            height: 100%;
+            background-repeat: repeat-x; 
+            background-size: auto 100%;
+            transform-origin: center;
+
+            /* Disable aliasing */
+            image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+            image-rendering: -moz-crisp-edges;          /* Firefox                        */
+            image-rendering: -o-crisp-edges;            /* Opera                          */
+            image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+            image-rendering: pixelated;                 /* Universal support since 2021   */
+            image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+            -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+        }
+        .parallax-container #ctext {
+            position: absolute;
+            z-index: 10;
+            left: 50px;
+            top: 100px;
+        }
+
+        .parallax-container #seal {
+            position: absolute;
+            z-index: 10;
+            left: 48px;
+            top: -10px;
+            width: 110px;
+            height: auto;
+        }
+        .parallax-container #abalogo {
+            position: absolute;
+            z-index: 10;
+            top: 3%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: 35%;
+        }
+
+        .myButton {
+            background-color:#32312C;
+            border-radius:14px;
+            border:2.5px solid #D7CAA9;
+            display:inline-block;
+            cursor:pointer;
+            color:#D7CAA9;
+            font-family: "Merriweather Sans", sans-serif;
+            font-size:20px;
+            font-weight:bold;
+            padding:16px 31px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #2f6627;
+        }
+        .myButton:hover {
+            background-color:#3C3B36;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+
+
+        .centered_menu {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            top: 70%;
+            width: 100%;
+        }
+        .h_buttons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        .h_buttons2 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            height: 30%;
+            
+        }
+
+        .social_links {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            top: 40px;
+            right: 30px;
+            width: 3%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/layer_8.png');"></div>
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/clouds_layer_8.png');"></div>
+        
+        <div class="parallax-layer" data-depth="0.3" style="background-image: url('images/layer_7.png');"></div>
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/clouds_layer_7.png');"></div>
+
+        <div class="parallax-layer" data-depth="0.4" style="background-image: url('images/layer_6.png');"></div>
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/clouds_layer_6.png');"></div>
+
+        <div class="parallax-layer" data-depth="0.5" style="background-image: url('images/layer_5.png');"></div>
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/clouds_layer_5.png');"></div>
+
+        <div class="parallax-layer" data-depth="0.6" style="background-image: url('images/layer_4.png');"></div>
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/clouds_layer_4.png');"></div>
+
+        <div class="parallax-layer" data-depth="0.7" style="background-image: url('images/layer_3.png');"></div>
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/clouds_layer_3.png');"></div>
+
+        <div class="parallax-layer" data-depth="0.8" style="background-image: url('images/layer_2.png');"></div>
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/clouds_layer_2.png');"></div>
+
+        <div class="parallax-layer" data-depth="1.0" style="background-image: url('layer_1.png');"></div>
+        
+        <img id="ctext" src="images/chinese_callig.png">
+        <img id="seal" src="images/red_seal.webp">
+        <img id="abalogo" src="images/ABACUSLOGO_w.png">
+
+        <!-- <div class="social_links">
+            <img src="instagram_logo.png">
+            <img src="facebook_logo.png">
+            <img src="warwicksu_logo.png">
+            <img src="discord_logo.png">
+            <img src="linkedin_logo.png">
+        </div> -->
+
+        <div class="centered_menu">
+            <div class="h_buttons2">
+                <img src="images/instagram_logo.png">
+                <img src="images/facebook_logo.png">
+                <img src="images/warwicksu_logo.png">
+                <img src="images/discord_logo.png">
+                <img src="images/linkedin_logo.png">
+            </div>
+            <div class="h_buttons">
+                <a href="#" class="myButton">About ABACUS</a>
+                <a href="#" class="myButton">Upcoming Events</a>
+                <a href="#" class="myButton">Meet the Exec</a>
+                <a href="#" class="myButton">Our Sponsors</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="parallax-container">
+        <div class="parallax-layer" data-depth="0.2" style="background-image: url('images/layer_9.png');"></div>
+        
+    </div>
+    
+    <script>
+        const layers = document.querySelectorAll(".parallax-layer");
+
+        // Variables to store target position and window center
+        let targetX = 0;
+        let centerX = window.innerWidth / 2;
+
+        // Function to update the center point dynamically on window resize
+        function updateWindowCenter() {
+            centerX = window.innerWidth / 2;
+        }
+
+        // Event listener to track mouse movements
+        document.addEventListener("mousemove", (event) => {
+            const { clientX } = event;
+
+            // Update the global target position based on the cursor
+            targetX = clientX - centerX;
+        });
+
+        // Event listener to handle window resize
+        window.addEventListener("resize", updateWindowCenter);
+
+        // Function to update layer positions
+        function updateParallax() {
+            layers.forEach((layer) => {
+                const depth = parseFloat(layer.dataset.depth);
+                const layerTargetX = (targetX * depth * 0.2); // Remove dependency on window.innerWidth
+
+                // Initialize currentX if undefined
+                if (layer.currentX === undefined) layer.currentX = 0;
+
+                // Interpolate currentX towards the targetX for each layer
+                layer.currentX += (layerTargetX - layer.currentX) * 0.02;
+
+                // Apply the transform
+                layer.style.transform = `translateX(${layer.currentX}px)`;
+            });
+
+            // Continue the animation loop
+            requestAnimationFrame(updateParallax);
+        }
+
+        // Initialize the center position and start the animation loop
+        updateWindowCenter();
+        updateParallax();
+
+    </script>
+</body>
+</html>
