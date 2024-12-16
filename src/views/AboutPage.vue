@@ -3,16 +3,17 @@
     <div class="expand-div" ref="expandDiv">
       <!-- Buttons at the top -->
       <div class="button-container">
-        <button @click="setActiveContent(1)">Content 1</button>
-        <button @click="setActiveContent(2)">Content 2</button>
-        <button @click="setActiveContent(3)">Content 3</button>
-        <button @click="setActiveContent(4)">Content 4</button>
+        <button @click="setActiveContent(1)">What is ABACUS?</button>
+        <button @click="setActiveContent(2)">Past Events Gallery</button>
+        <button @click="setActiveContent(3)">Meet the Exec</button>
+        <button @click="setActiveContent(4)">Upcoming Events</button>
       </div>
 
       <!-- Scrollable content area -->
       <div class="scrollable-content">
         <!-- Content 1: Slogan, Descriptive Text, and YouTube Video -->
         <div v-if="activeContent === 1">
+          <h1>What is ABACUS?</h1>
           <h2>Warwick Association of British And Chinese University Students</h2>
           <p>
             Warwick ABACUS organises fun events every week, such as our Games Night socials, bar crawls, hotpot dinners, and much more.
@@ -29,49 +30,94 @@
               allowfullscreen
             ></iframe>
           </div>
+          <h2>
+            Who is this society for?
+          </h2>
+          <p>
+            ABACUS isn’t just for British or Chinese students, but for everyone! Inclusivity is a core value of ABACUS, and as part of this, we only speak english. 
+            This society is for anyone interested in Asian culture or in coming to any of our events.
+          </p>
+          <h2>
+            How do I get involved?
+          </h2>
+          <p>
+            The best way to stay up-to-date with what’s happening is by joining ABACUS. You can follow us on our social media and check out our website to find out more about the society too.
+
+            Like our Facebook page (@warwickabacus), follow our Instagram (@warwickabacus), and subscribe to our email newsletter to stay up to date with our society!
+
+            If you have any questions or queries about our society, Warwick, or uni life in general, please DM us on any social media or ask any of the execs! We look forward to meeting you!
+          </p>
         </div>
 
         <!-- Content 2: Flickity Carousels -->
         <div v-if="activeContent === 2">
-          <h2>Carousel 1</h2>
+          <h2>Society Memories</h2>
+          <p>Relive our cherished moments from past events! From group pictures at socials to highlights from sober gatherings, these memories capture the spirit and togetherness of Warwick ABACUS.</p>
           <div class="carousel" ref="carousel1">
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 1" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 2" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 3" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 4" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 5" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
           </div>
 
-          <h2>Carousel 2</h2>
+          <h2>Club Nights & Outings</h2>
+          <p>The more chaotic side of ABACUS with snapshots from the club nights, outings, and spicy evenings that bring our community closer together.</p>
           <div class="carousel" ref="carousel2">
             <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 4" /></div>
             <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 5" /></div>
             <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
           </div>
 
-          <h2>Carousel 3</h2>
+          <h2>Event Promotions</h2>
+          <p>A showcase of the promotional visuals from our Instagram page that brought each exciting event to life.</p>
           <div class="carousel" ref="carousel3">
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 7" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 8" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 9" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 4" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 5" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
           </div>
         </div>
 
         <!-- Content 3: Image Gallery -->
-        <div v-if="activeContent === 3" class="image-gallery">
-          <div
-            class="image-item"
-            v-for="image in galleryImages"
-            :key="image.id"
-            @click="openInstagram(image.instagram)"
-          >
-            <img :src="image.src" :alt="image.alt" />
-            <div class="overlay">
-              <div class="overlay-text">
-                <i class="fab fa-instagram"></i> {{ image.instagram }}
+        <div v-if="activeContent === 3" >
+          <h2>
+            The ABACUS Team
+          </h2>
+          <p>
+            The main way to reach out is through our Instagram DMs at @warwickabacus.<br>
+            You can also find each exec member's Instagram page by clicking over them, if you want to message someone specific (or stalk). <br>
+            Prioritise speaking to the Welfare Officer (Lulu Chen) if you have any personal inquiries!
+          </p>
+          <div  class="image-gallery">
+            <div
+              class="image-item"
+              v-for="image in galleryImages"
+              :key="image.id"
+              @click="openInstagram(image.instagram)"
+            >
+              <img :src="image.src" :alt="image.alt" />
+              <div class="overlay">
+                <div class="overlay-text">
+                  <i class="fab fa-instagram"></i> {{ image.instagram }}
+                </div>
               </div>
-            </div>
-            <div class="caption">
-              <p class="exec-name">{{ image.name }}</p>
-              <p class="exec-role">{{ image.role }}</p>
+              <div class="caption">
+                <p class="exec-name">{{ image.name }}</p>
+                <p class="exec-role">{{ image.role }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -103,31 +149,135 @@ export default {
     return {
       isAnimating: false,
       activeContent: 1,
-      youtubeUrl: "https://www.youtube.com/embed/DMeKi_QmWJE?autoplay=1",
+      youtubeUrl: "https://www.youtube.com/embed/r-jA1YD5VyA?si=XqWpCyfvlk71q_qc&amp;controls=0&amp;autoplay=1",
       galleryImages: [
         {
           id: 1,
           src: "https://via.placeholder.com/200",
           alt: "Image 1",
-          name: "John Doe",
+          name: "Michael Lee",
           role: "President",
-          instagram: "@johndoe",
+          instagram: "@michael__leee",
         },
         {
           id: 2,
           src: "https://via.placeholder.com/200",
           alt: "Image 2",
-          name: "Jane Smith",
-          role: "Vice President",
-          instagram: "@janesmith",
+          name: "Lulu Chen",
+          role: "Vice President & Welfare",
+          instagram: "@_luluchenn",
         },
         {
           id: 3,
           src: "https://via.placeholder.com/200",
           alt: "Image 3",
-          name: "Alex Brown",
+          name: "Macy Wu",
+          role: "Publicity Officer",
+          instagram: "@macy_wuuuuuu",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Chloe Ho",
+          role: "Publicity Officer",
+          instagram: "@chloeeh.xo",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Chloe Bang",
           role: "Treasurer",
-          instagram: "@alexbrown",
+          instagram: "@chloebang_",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Sophie Cheung",
+          role: "Secretary",
+          instagram: "@chung.sophie",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Cecilia De La Cruz",
+          role: "Events Officer",
+          instagram: "@cecidzh",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Ashely Wei",
+          role: "Social Secretary",
+          instagram: "@ashely_wqy",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Judy Chen",
+          role: "Social Secretary",
+          instagram: "@judy_chen4321",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Vicky Zhou",
+          role: "Social Secretary",
+          instagram: "@vicki.zhou_",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Daniel Song",
+          role: "Sports Officer",
+          instagram: "@soohyun_152",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Sheree Zhang",
+          role: "Sponsorships Officer",
+          instagram: "@sheree_mmao",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Shahnaz Rahman",
+          role: "Tour Secretary",
+          instagram: "@shanazr.__",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Amber Yeung",
+          role: "Ball Secretary",
+          instagram: "@amberyeunng",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Jerry Tsui",
+          role: "Marketing Frep",
+          instagram: "@tsui.jerry",
+        },
+        {
+          id: 3,
+          src: "https://via.placeholder.com/200",
+          alt: "Image 3",
+          name: "Will Sumner",
+          role: "Events Frep",
+          instagram: "@willsumner",
         },
       ],
     };
@@ -138,7 +288,7 @@ export default {
 
       // Autoplay YouTube video for Content 1
       if (contentNumber === 1) {
-        this.youtubeUrl = "https://www.youtube.com/embed/DMeKi_QmWJE?autoplay=1";
+        this.youtubeUrl = "https://www.youtube.com/embed/r-jA1YD5VyA?si=XqWpCyfvlk71q_qc&amp;controls=0&amp;autoplay=1";
       }
 
       // Initialize carousels for Content 2
@@ -187,13 +337,14 @@ export default {
   left: 50%;
   width: 75%;
   transform: translate(-50%, 0%);
-  height: 0;
+  height: 100vh;
   background-color: #23221e;
   padding-top: 90px;
   overflow: hidden;
   transition: height 1s ease;
   display: flex;
   flex-direction: column;
+  
 }
 
 .button-container {
@@ -201,18 +352,40 @@ export default {
   justify-content: center;
   gap: 20px;
   padding: 10px;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+}
+
+.button-container button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .scrollable-content {
   flex-grow: 1;
+  margin-left: 40px;
+  margin-right: 40px;
   overflow-y: auto;
-  padding: 20px;
+  padding: 20px 20px 100px;
   color: white;
+  height: calc(100vh - 90px); /* Subtract the height of the button container or header */
+  box-sizing: border-box;
+}
+
+.scrollable-content p {
+  font-weight: 450;
 }
 
 .video-container iframe {
   display: block;
   margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .carousel {
@@ -284,5 +457,52 @@ export default {
 
 .exec-role {
   font-size: 14px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .expand-div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+    height: 100vh;
+    background-color: #23221e;
+    padding-top: 90px;
+    overflow: hidden;
+    transition: height 1s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+  }
+
+  .button-container button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 16px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .scrollable-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 20px 100px;
+    color: white;
+    height: calc(100vh - 90px); /* Subtract the height of the button container or header */
+    box-sizing: border-box;
+  }
 }
 </style>

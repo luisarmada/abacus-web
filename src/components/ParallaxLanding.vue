@@ -1,33 +1,30 @@
 <template>
-    <div>
-      <div class="parallax-container">
-        <div class="parallax-layer" v-for="layer in layers" :key="layer.id" :data-depth="layer.depth" :style="{ backgroundImage: `url(${layer.image})` }"></div>
-  
-        <img id="ctext" src="/images/chinese_callig.png" alt="Chinese Calligraphy">
-        <!-- <img id="seal" src="/images/red_seal.webp" alt="Red Seal"> -->
-        <img id="abalogo" src="/images/ABACUSLOGO_w.png" alt="ABACUS Logo">
-        
-  
-        <!-- <div class="h_buttons2">
-          <img src="/images/instagram_logo.png" alt="Instagram">
-          <img src="/images/facebook_logo.png" alt="Facebook">
-          <img src="/images/warwicksu_logo.png" alt="Warwick SU">
-          <img src="/images/discord_logo.png" alt="Discord">
-          <img src="/images/linkedin_logo.png" alt="LinkedIn">
-        </div> -->
-  
-        <!-- <div class="centered_menu">
-          <div class="h_buttons">
-            <a href="#" class="myButton">About ABACUS</a>
-            <a href="#" class="myButton">Upcoming Events</a>
-            <a href="#" class="myButton">Meet the Exec</a>
-            <a href="#" class="myButton">Our Sponsors</a>
-          </div>
-        </div> -->
+  <div>
+    <div class="parallax-container">
+      <div
+        class="parallax-layer"
+        v-for="(layer, index) in layers"
+        :key="layer.id"
+        :data-depth="layer.depth"
+        :style="{ backgroundImage: `url(${layer.image})`, animationDelay: `${index * 0.2}s` }"
+      ></div>
 
-      </div>
+      <img
+        id="ctext"
+        src="/images/chinese_callig.png"
+        alt="Chinese Calligraphy"
+        class="reveal-animation"
+      />
+      <img
+        id="abalogo"
+        src="/images/ABACUSLOGO_w.png"
+        alt="ABACUS Logo"
+        class="logo-animation"
+      />
     </div>
-  </template>
+  </div>
+</template>
+
   
 <script>
 export default {
