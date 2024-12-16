@@ -113,20 +113,20 @@ export default {
 </script>
 
   
-  <style>
-  body {
+<style>
+body {
     margin: 0;
     background-color: #D7CAA9;
     overflow-x: hidden;
-  }
-  .parallax-container {
+}
+.parallax-container {
     position: relative;
     width: 100vw;
     height: 100vh;
 
     overflow: hidden;
-  }
-  .parallax-layer {
+}
+.parallax-layer {
     position: absolute;
     top: 0;
     left: -100%;
@@ -136,26 +136,32 @@ export default {
     background-size: auto 100%;
     transform-origin: center;
     image-rendering: pixelated;
-  }
-  #abalogo {
-  position: absolute;
-  z-index: 3;
-  top: 50px;
-  left: 50%;
-  transform: translate(-54%, 0%);
-  width: 33%;
-  min-width: 400px;
 }
-  #ctext {
+#abalogo {
+    position: absolute;
+    z-index: 3;
+    top: 50px;
+    left: 50%;
+    transform: translate(-54%, 0%);
+    width: 33%;
+    min-width: 400px;
+    user-select: none; 
+    pointer-events: none; 
+    -webkit-user-drag: none;
+}
+#ctext {
     position: absolute;
     z-index: 10;
     left: 4%;
-    transform: translate(-12px, 0);
+    transform: translate(-7px, 0);
     top: 0px;
-    width: 100px;
+    width: 90px;
     height: auto;
-  }
-  @media only screen and (max-width: 1024px) {
+    user-select: none; 
+    pointer-events: none; 
+    -webkit-user-drag: none;
+}
+@media only screen and (max-width: 1024px) {
     #ctext {
         display: none;
     }
@@ -167,17 +173,23 @@ export default {
         transform: translate(-52%, 0%);
         width: 60%;
         max-width: 400px;
+        user-select: none; 
+        pointer-events: none; 
+        -webkit-user-drag: none;
     }
-  }
+}
 
-  #seal {
+#seal {
     position: absolute;
     z-index: 10;
     left: 48px;
     top: -10px;
     width: 110px;
     height: auto;
-  }
+    user-select: none; 
+    pointer-events: none; 
+    -webkit-user-drag: none;
+}
   
   .myButton {
     background-color: #32312C;

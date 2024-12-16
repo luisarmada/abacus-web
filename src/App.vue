@@ -8,6 +8,7 @@
       <div class="navbar-menu">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
+        <router-link to="/sponsors">Sponsors</router-link>
       </div>
     </nav>
     <ParallaxLanding />
@@ -67,6 +68,9 @@ body, ul {
   height: 56px;
   width: auto;
   margin-right: 20px; /* Space between logo and menu items */
+  user-select: none; 
+  pointer-events: none; 
+  -webkit-user-drag: none;
 }
 
 /* Menu container */
