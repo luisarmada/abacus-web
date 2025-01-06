@@ -37,21 +37,21 @@ export default {
       sponsors: [
         {
           id: 1,
-          logo: "https://via.placeholder.com/300x150", // Placeholder logo
+          logo: "./images/sponsors/To-Pho-Vietnamese.jpg", // Placeholder logo
           name: "To Pho",
           address: "123 Main St, Cityville",
           discount: "10% Off for Members, 15% Off for Exec",
         },
         {
           id: 2,
-          logo: "https://via.placeholder.com/300x150",
+          logo: "./images/sponsors/NoodleKingFood.png",
           name: "Noodle King",
           address: "456 Market St, Townsville",
           discount: "10% Off",
         },
         {
           id: 3,
-          logo: "https://via.placeholder.com/300x150",
+          logo: "./images/sponsors/XiongqiFood.jpg",
           name: "Xiongqi",
           address: "789 Broadway, Metropolis",
           discount: "10% Off (+ free drinks)",

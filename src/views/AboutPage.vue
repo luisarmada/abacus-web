@@ -54,27 +54,27 @@
           <h2>Society Memories</h2>
           <p>Relive our cherished moments from past events! From group pictures at socials to highlights from sober gatherings, these memories capture the spirit and togetherness of Warwick ABACUS.</p>
           <div class="carousel" ref="carousel1">
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 4" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 5" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/bigcircle.jpeg" alt="Placeholder 4" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/charitycircle2.jpeg" alt="Placeholder 5" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/charitycircleidk.jpeg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/dj.jpg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/exec.JPG" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/shots.jpg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/freakyuyi.jpeg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/firebottle.jpg" alt="Placeholder 6" /></div>
           </div>
 
           <h2>Club Nights & Outings</h2>
           <p>The more chaotic side of ABACUS with snapshots from the club nights, outings, and spicy evenings that bring our community closer together.</p>
           <div class="carousel" ref="carousel2">
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 4" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 5" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/bigcircle.jpeg" alt="Placeholder 4" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/charitycircle2.jpeg" alt="Placeholder 5" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/charitycircleidk.jpeg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/dj.jpg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/exec.JPG" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/shots.jpg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/freakyuyi.jpeg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/clubnightpics/firebottle.jpg" alt="Placeholder 6" /></div>
           </div>
 
           <h2>Event Promotions</h2>
@@ -108,7 +108,11 @@
               :key="image.id"
               @click="openInstagram(image.instagram)"
             >
-              <img :src="image.src" :alt="image.alt" />
+            <img 
+                :src="image.src" 
+                :alt="image.alt" 
+                :style="{ 'object-position': image.objectPosition }" 
+              />
               <div class="overlay">
                 <div class="overlay-text">
                   <i class="fab fa-instagram"></i> {{ image.instagram }}
@@ -149,19 +153,20 @@ export default {
     return {
       isAnimating: false,
       activeContent: 1,
-      youtubeUrl: "https://www.youtube.com/embed/r-jA1YD5VyA?si=XqWpCyfvlk71q_qc&amp;controls=0&amp;autoplay=1",
+      youtubeUrl: "https://www.youtube.com/embed/r-jA1YD5VyA?si=XqWpCyfvlk71q_qc&amp;controls=0&amp;autoplay=1&amp;mute=1",
       galleryImages: [
         {
           id: 1,
-          src: "https://via.placeholder.com/200",
+          src: "/images/2425exec/michael.jpeg",
           alt: "Image 1",
           name: "Michael Lee",
           role: "President",
           instagram: "@michael__leee",
+          objectPosition: "bottom"
         },
         {
           id: 2,
-          src: "https://via.placeholder.com/200",
+          src: "/images/2425exec/lulu.jpeg",
           alt: "Image 2",
           name: "Lulu Chen",
           role: "Vice President & Welfare",
@@ -169,115 +174,117 @@ export default {
         },
         {
           id: 3,
-          src: "https://via.placeholder.com/200",
+          src: "/images/2425exec/macywucy.jpeg",
           alt: "Image 3",
           name: "Macy Wu",
           role: "Publicity Officer",
           instagram: "@macy_wuuuuuu",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 4,
+          src: "/images/2425exec/chloeho.jpeg",
           alt: "Image 3",
           name: "Chloe Ho",
           role: "Publicity Officer",
           instagram: "@chloeeh.xo",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 5,
+          src: "/images/2425exec/chloebang.jpeg",
           alt: "Image 3",
           name: "Chloe Bang",
           role: "Treasurer",
           instagram: "@chloebang_",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 6,
+          src: "/images/2425exec/sophiecheung.jpeg",
           alt: "Image 3",
           name: "Sophie Cheung",
           role: "Secretary",
           instagram: "@chung.sophie",
+          objectPosition: "bottom"
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 7,
+          src: "/images/2425exec/cece.jpeg",
           alt: "Image 3",
           name: "Cecilia De La Cruz",
           role: "Events Officer",
           instagram: "@cecidzh",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 8,
+          src: "/images/2425exec/ashleywei.jpeg",
           alt: "Image 3",
           name: "Ashely Wei",
           role: "Social Secretary",
           instagram: "@ashely_wqy",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 9,
+          src: "/images/2425exec/judy.jpeg",
           alt: "Image 3",
           name: "Judy Chen",
           role: "Social Secretary",
           instagram: "@judy_chen4321",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 10,
+          src: "/images/2425exec/vicki.jpeg",
           alt: "Image 3",
           name: "Vicky Zhou",
           role: "Social Secretary",
           instagram: "@vicki.zhou_",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 11,
+          src: "/images/2425exec/danielsong.jpeg",
           alt: "Image 3",
           name: "Daniel Song",
           role: "Sports Officer",
           instagram: "@soohyun_152",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 12,
+          src: "/images/2425exec/sheree.jpeg",
           alt: "Image 3",
           name: "Sheree Zhang",
           role: "Sponsorships Officer",
           instagram: "@sheree_mmao",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 13,
+          src: "/images/2425exec/shahnaz.jpeg",
           alt: "Image 3",
           name: "Shahnaz Rahman",
           role: "Tour Secretary",
           instagram: "@shanazr.__",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 14,
+          src: "/images/2425exec/amber.jpeg",
           alt: "Image 3",
           name: "Amber Yeung",
           role: "Ball Secretary",
           instagram: "@amberyeunng",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 15,
+          src: "/images/2425exec/jerry.jpeg",
           alt: "Image 3",
           name: "Jerry Tsui",
           role: "Marketing Frep",
           instagram: "@tsui.jerry",
         },
         {
-          id: 3,
-          src: "https://via.placeholder.com/200",
+          id: 16,
+          src: "/images/2425exec/will.jpeg",
           alt: "Image 3",
           name: "Will Sumner",
           role: "Events Frep",
           instagram: "@willsumner",
+          objectPosition: "top"
         },
       ],
     };
@@ -288,7 +295,7 @@ export default {
 
       // Autoplay YouTube video for Content 1
       if (contentNumber === 1) {
-        this.youtubeUrl = "https://www.youtube.com/embed/r-jA1YD5VyA?si=XqWpCyfvlk71q_qc&amp;controls=0&amp;autoplay=1";
+        this.youtubeUrl = "https://www.youtube.com/embed/r-jA1YD5VyA?si=XqWpCyfvlk71q_qc&amp;controls=0&amp;autoplay=1&amp;mute=1";
       }
 
       // Initialize carousels for Content 2
@@ -388,15 +395,20 @@ export default {
   padding-bottom: 15px;
 }
 
-.carousel {
-  margin: 20px 0;
+.carousel-cell {
+  width: 200px; /* Fixed width for each cell */
+  height: 200px; /* Fixed height for each cell */
+  display: flex; /* Use flex to align content */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure images don’t overflow */
 }
 
 .carousel-cell img {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width: 100%; /* Make the image fill the container width */
+  height: 100%; /* Make the image fill the container height */
+  object-fit: cover; /* Crop the image to cover the container */
+  object-position: center; /* Center the image focus */
 }
 
 .image-gallery {
@@ -410,11 +422,17 @@ export default {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  width: 200px; /* Fixed width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Allow caption below the image */
+  align-items: center;
 }
 
 .image-item img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Ensure image fills the container */
+  height: 180px; /* Fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio and fill container */
 }
 
 .image-item .overlay {
@@ -422,13 +440,15 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
+  height: 180px; /* Match the image height */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
 }
 
 .image-item .overlay .overlay-text {
@@ -447,17 +467,22 @@ export default {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px 10px; /* Padding for better spacing */
+  width: 100%; /* Match the width of the image */
+  box-sizing: border-box; /* Include padding in width */
 }
 
 .exec-name {
   font-weight: bold;
   font-size: 16px;
+  margin: 5px 0; /* Add spacing between name and role */
 }
 
 .exec-role {
   font-size: 14px;
+  margin: 0;
 }
+
 
 @media only screen and (max-width: 1024px) {
   .expand-div {

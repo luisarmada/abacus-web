@@ -9,6 +9,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/sponsors">Sponsors</router-link>
+        <router-link to="/connect">Connect</router-link>
       </div>
     </nav>
     <ParallaxLanding />
