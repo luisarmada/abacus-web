@@ -164,6 +164,7 @@ export default {
     opacity: 0;
     width: 33%;
     min-width: 400px;
+    max-width: 800px;
     user-select: none;
     pointer-events: none;
     animation: fade-in-scale-rotate 1.5s ease forwards 0s;
