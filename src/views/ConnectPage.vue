@@ -4,7 +4,7 @@
         <div class="content">
           <h1>Connect with us!</h1>
           <p>Make sure to follow us on all our socials to stay up-to-date on all our upcoming events. You can also network with our current and past exec members and grow your connections!</p>
-          <div  class="image-gallery">
+          <!-- <div  class="image-gallery">
             <div
               class="image-item"
               v-for="image in galleryImages"
@@ -26,7 +26,8 @@
                 <p class="exec-role">{{ image.role }}</p>
               </div>
             </div>
-          </div>
+          </div> -->
+
         </div>
       </div>
     </div>
