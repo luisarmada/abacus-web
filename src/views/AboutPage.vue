@@ -6,7 +6,7 @@
         <button @click="setActiveContent(1)">What is ABACUS?</button>
         <button @click="setActiveContent(2)">Past Events Gallery</button>
         <button @click="setActiveContent(3)">Meet the Exec</button>
-        <button @click="setActiveContent(4)">Upcoming Events</button>
+        <!-- <button @click="setActiveContent(4)">Upcoming Events</button> -->
       </div>
 
       <!-- Scrollable content area -->
@@ -54,14 +54,12 @@
           <h2>Society Memories</h2>
           <p>Relive our cherished moments from past events! From group pictures at socials to highlights from sober gatherings, these memories capture the spirit and togetherness of Warwick ABACUS.</p>
           <div class="carousel" ref="carousel1">
-            <div class="carousel-cell"><img src="/images/clubnightpics/bigcircle.jpeg" alt="Placeholder 4" /></div>
-            <div class="carousel-cell"><img src="/images/clubnightpics/charitycircle2.jpeg" alt="Placeholder 5" /></div>
-            <div class="carousel-cell"><img src="/images/clubnightpics/charitycircleidk.jpeg" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="/images/clubnightpics/dj.jpg" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="/images/clubnightpics/exec.JPG" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="/images/clubnightpics/shots.jpg" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="/images/clubnightpics/freakyuyi.jpeg" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="/images/clubnightpics/firebottle.jpg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/societypics/1.jpeg" alt="Placeholder 4" /></div>
+            <div class="carousel-cell"><img src="/images/societypics/2.jpeg" alt="Placeholder 5" /></div>
+            <div class="carousel-cell"><img src="/images/societypics/3.jpeg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/societypics/4.jpeg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/societypics/5.jpeg" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/societypics/6.jpeg" alt="Placeholder 6" /></div>
           </div>
 
           <h2>Club Nights & Outings</h2>
@@ -80,14 +78,14 @@
           <h2>Event Promotions</h2>
           <p>A showcase of the promotional visuals from our Instagram page that brought each exciting event to life.</p>
           <div class="carousel" ref="carousel3">
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 4" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 5" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
-            <div class="carousel-cell"><img src="https://via.placeholder.com/200" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/term1cal.png" alt="Placeholder 4" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/abafamily.png" alt="Placeholder 5" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/eoydin.png" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/afterhours.png" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/gamesnight.png" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/lastonestanding.png" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/jinseonbbq.png" alt="Placeholder 6" /></div>
+            <div class="carousel-cell"><img src="/images/instaposts/charitycircle.png" alt="Placeholder 6" /></div>
           </div>
         </div>
 
